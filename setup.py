@@ -9,13 +9,13 @@ README = (HERE / 'README').read_text()
 
 # This call to setup() does all the work
 setup(
-    name='apiendpoints',
+    name='bqtables',
     version='0.9.0',
     description='Wraps Python Requests with an (even) easier to use '
                 'programming model for accessing a REST API.',
     long_description=README,
     long_description_content_type='text/markdown',
-    url='https://github.com/sethlivingston/python-api-client',
+    url='https://github.com/sethlivingston/python-bq-client',
     author='Seth M. Livingston',
     author_email='webdevbyseth@gmail.com',
     license='MIT',
@@ -24,7 +24,7 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.7',
     ],
-    packages=['apiendpoints'],
+    packages=['bqtables'],
     include_package_data=True,
-    install_requires=['requests'],
+    install_requires=['google-cloud-bigquery'],
 )
